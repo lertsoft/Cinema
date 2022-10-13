@@ -1,0 +1,27 @@
+{
+  "name": "svelteproject",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.2",
+    "axios": "^1.1.2",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.18",
+    "postcss-extend-rule": "^4.0.0",
+    "postcss-import": "^15.0.0",
+    "postcss-load-config": "^4.0.1",
+    "postcss-preset-env": "^7.8.2",
+    "svelte": "^3.49.0",
+    "svelte-preprocess": "^4.10.7",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "js-levenshtein": "^1.1.6"
+  }
+}
