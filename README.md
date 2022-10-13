@@ -4,9 +4,9 @@ This repo host a experiencial way of looking at the films that I have worked on 
 Also this is a reverse Engineer of another website that inspire me to do this. </br>
 Nice to make your acquaintance 😁.</br>
 
-![Home](/Demo/demo1)
+![Home](./public/Demo/demo1.jpg)
 
-![Home](/Demo/demo2)
+![Home](./public/Demo/demo2.jpg)
 
 ## Technical considerations
 
