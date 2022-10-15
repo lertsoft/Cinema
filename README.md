@@ -27,3 +27,5 @@ ffmpeg -i channel-08.webm -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus 
 yt-dlp -f mp4 (Link Goes Here)
 
 yt-dlp does not support webm
+
+This website was inspired by (kaisermann)[https://kaisermann.me]
