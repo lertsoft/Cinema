@@ -19,3 +19,11 @@ Nice to make your acquaintance 😁.</br>
 This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
 
 Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+
+**Useful command for transcoding and downloading the videos**
+
+ffmpeg -i channel-08.webm -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus channel-08.mp4
+
+yt-dlp -f mp4 (Link Goes Here)
+
+yt-dlp does not support webm
