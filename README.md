@@ -20,12 +20,14 @@ This template contains as little as possible to get started with Vite + Svelte, 
 
 Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
 
-**Useful command for transcoding and downloading the videos**
+###Useful command for transcoding and downloading the videos
 
-ffmpeg -i channel-08.webm -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus channel-08.mp4
+* ffmpeg -i channel-08.webm -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus channel-08.mp4
 
-yt-dlp -f mp4 (Link Goes Here)
+* yt-dlp -f mp4 (Link Goes Here)
 
 yt-dlp does not support webm
 
-This website was inspired by (kaisermann)[https://kaisermann.me]
+**This website was inspired by [kaisermann](https://kaisermann.me)**
+
+[License](/license)
