@@ -275,7 +275,7 @@
   
           <div class="brand">
             <br />
-            <span>Cinematography Spaciship</span>
+            <span>Cinematography Spaceship</span>
           </div>
         </div>
       </div>

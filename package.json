@@ -22,6 +22,11 @@
     "vite": "^3.1.0"
   },
   "dependencies": {
+    "@mediapipe/face_mesh": "^0.4.1633559619",
+    "@tensorflow-models/face-detection": "^1.0.1",
+    "@tensorflow-models/face-landmarks-detection": "^1.0.2",
+    "@tensorflow/tfjs": "^4.0.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.0.0",
     "js-levenshtein": "^1.1.6"
   }
 }

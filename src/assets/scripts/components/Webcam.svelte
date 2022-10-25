@@ -1,12 +1,8 @@
 <script>
-// @ts-nocheck
 
-    // @ts-ignore
     import { createEventDispatcher } from 'svelte';
   
-    // @ts-ignore
     import { onMount } from 'svelte';
-    // @ts-ignore
     import { raf, body } from '../modules/utils.js';
     import { loadingChannel, LOADING_STATE } from '../modules/tv.js';
   
@@ -20,7 +16,7 @@
     let elapsedTime;
     let formattedTime;
     let counterRequest;
-  
+    
     async function initStream() {
       stream = await window.navigator.mediaDevices
         .getUserMedia({
@@ -67,7 +63,8 @@
         counterRequest = raf(loop);
       });
     }
-  
+    
+    // Fake Recorder timer
     $: {
       // @ts-ignore
       const milliseconds = parseInt((elapsedTime % 1000) / 100);
@@ -76,7 +73,7 @@
       const hours = padNumber(Math.floor((elapsedTime / (1000 * 60 * 60)) % 24));
   
       formattedTime = `${hours}:${minutes}:${seconds}.${milliseconds}`;
-    }
+    } 
   
     onMount(() => {
       initStream();
@@ -90,6 +87,8 @@
         }
       };
     });
+    // main();
+    // runFacemesh();
   </script>
   
   <style lang="postcss">
@@ -132,7 +131,7 @@
   <div
     class:visually-hidden={!isReady || $loadingChannel === LOADING_STATE.Loading}>
     <video bind:this={video} class="tv-video" channel="camera" autoplay />
-  
+    <canvas id="facecanvas"></canvas>  
     <div class="rec-wrapper big-text glitchy-text">
       <div class="rec">REC <span /></div>
       <div class="counter">{formattedTime}</div>

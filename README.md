@@ -22,7 +22,7 @@ Should you later need the extended capabilities and extensibility provided by Sv
 
 ###Useful command for transcoding and downloading the videos
 
-* ffmpeg -i channel-08.webm -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus channel-08.mp4
+* ffmpeg -i channel-08.mp4 -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus channel-08.webm
 
 * yt-dlp -f mp4 (Link Goes Here)
 
