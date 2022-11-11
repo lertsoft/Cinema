@@ -1,4 +1,4 @@
-<script>
+<script lang="js">
     // @ts-ignore
     import { createEventDispatcher } from 'svelte';
   

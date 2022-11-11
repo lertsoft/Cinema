@@ -49,6 +49,9 @@
     />
   
     <link rel="icon" href="/favicon.png" />
+
+    <script src="/src/i18n.js"></script>
+    <script src="/src/jquery-3.2.1.slim.min.js"></script>
   
     <title>Ronny's Cinematography</title>
   </head>
@@ -79,29 +82,45 @@
                           <div role="button">CHANNEL 00</div>
                         </noscript>
                       </div>
+                      <div class="Languages">
+                        <h3 >Change Languages</h3>
+                        <!-- <button > -->
+                          <a href="?lang" > En </a>
+                        <!-- </button> -->
+                        <!-- <button > -->
+                          <a href="?lang=es" > 
+                            Es
+                          </a>
+                        <!-- </button> -->
+                        <!-- <button > -->
+                          <a href="?lang=fr" > 
+                            Fr
+                          </a>
+                        <!-- </button> -->
+                    </div>
                     </div>
                   </header>
   
                   <div class="page-content" id="content app" js-slot="content" >
                     <article class="bio">
                       <p class="big-text">
-                        Hey! I am <span class="bio__photo" tabindex="0">Ronny Coste</span>, 
-                        a <button class="button-text js-channel-trigger" data-channel="8">Dominican</button> 
-                        Filmmaker & Software engineer based in New York City. I dabble in photography, web engineering, cinematography, javascript frameworks, and design.
+                       <span data-i18n="hey"> Hey!</span> <span data-i18n="im">I am </span><span class="bio__photo" tabindex="0" >Ronny Coste</span>, 
+                       <span data-i18n="a"> a </span><button class="button-text js-channel-trigger" data-channel="8" data-i18n="dominican">Dominican</button> 
+                       <span data-i18n="skills"> Filmmaker & Software engineer based in New York City. I dabble in photography, web engineering, cinematography, javascript frameworks, and design.</span>
                         <br/><br/>
-                        This website is intended to be an experiencial cinema of my work as a Camera Assistant (AC), 
-                        Cinematographer (DP), and Assistant Director (AD). To see this videos in high resulition press 
-                        <a href="https://www.gallery.ronnycoste.com/cinematography" target="_blank" rel="noopener noreferrer"> HERE</a>.
+                        <span data-i18n="intend">This website is intended to be an experiencial cinema of my work as a Camera Assistant (AC), 
+                        Cinematographer (DP), and Assistant Director (AD).</span> <span data-i18n="videos">To see this videos in high resulition press </span>
+                        <a href="https://www.gallery.ronnycoste.com/cinematography" target="_blank" rel="noopener noreferrer" data-i18n="here"> HERE</a>.
                         <br/><br/>
-                        I am very passionate about analog things so I hope you enjoy this website as much as I do!
-                        Some of my other passions are: 
-                        <a href="https://github.com/lertsoft" target="_blank" rel="noopener noreferrer">coding</a>,
-                        <a href="https://gallery.ronnycoste.com" target="_blank" rel="noopener noreferrer">photography</a>,
-                        and web experiences
-                        <a href="https://ronnycoste.com/projects" target="_blank" rel="noopener noreferrer">Look here</a>.
+                        <span data-i18n="passion"> I am very passionate about analog things so I hope you enjoy this website as much as I do!</span>
+                        <span data-i18n="passion2"> Some of my other passions are: </span>
+                        <a href="https://github.com/lertsoft" target="_blank" rel="noopener noreferrer" data-i18n="coding">coding</a>,
+                        <a href="https://gallery.ronnycoste.com" target="_blank" rel="noopener noreferrer" data-i18n="photography">photography</a>,
+                        <span data-i18n="web">and web experiences</span>
+                        <a href="https://ronnycoste.com/projects" target="_blank" rel="noopener noreferrer" data-i18n="look">Look here</a>.
                         <br/><br/>
-                        If you'd like to chat, feel free to send me an
-                        <a href="mailto:hello@ronnycoste.com">E-mail</a>.
+                        <span data-i18n="chat"> If you'd like to chat, feel free to send me an</span> 
+                        <a href="mailto:hello@ronnycoste.com" data-i18n="email">E-mail</a>.
                       </p>
                     </article>
                     

@@ -1,4 +1,4 @@
-<script>
+<script lang="js">
     // @ts-ignore
     import { toggleSpace } from '../modules/tv.js';
   </script>
