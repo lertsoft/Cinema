@@ -23,7 +23,7 @@
     }
   </script>
   
-  <style>
+  <style lang="postcss">
     .volume {
       position: absolute;
       z-index: calc(var(--layer-tv-effects) + 1);
