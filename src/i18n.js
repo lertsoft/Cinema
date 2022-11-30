@@ -3,8 +3,8 @@
 const i18n = {
     allowLang: ["en ","es", "fr"], 
     // If you would like to add more language make sure to create a file with the following naming convention ie. es.js | fr.js | de.js | etc
-    defaultLang: "en", // Default language is whatever is on the  main HTML file
-    langPath: "./src/locales/",
+    defaultLang: "", // Default language is whatever is on the  main HTML file
+    langPath: "./locales/",
 
     getLang() {
         const url = new URL(window.location);
