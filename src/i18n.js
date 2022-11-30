@@ -1,11 +1,11 @@
 // Best practice for i18n...
 // Better solution than what i had before (check main.js)
 const i18n = {
-    allowLang: ["es", "fr"], 
+    allowLang: ["en ","es", "fr"], 
     // If you would like to add more language make sure to create a file with the following naming convention ie. es.js | fr.js | de.js | etc
-    defaultLang: "", // Default language is whatever is on the  main HTML file
+    defaultLang: "en", // Default language is whatever is on the  main HTML file
     langPath: "./src/locales/",
-    // dinamic route, not as good as in Nextjs
+
     getLang() {
         const url = new URL(window.location);
         let lang = url.searchParams.get("lang");
@@ -48,7 +48,7 @@ const i18n = {
         if (!i18nLangs) {return;}
 
         document.querySelectorAll("[data-i18n]").forEach(function(element) {
-            if (! i18nLangs[element.dataset.i18n]) {
+            if (!i18nLangs[element.dataset.i18n]) {
                 return;
             }
 
@@ -68,3 +68,10 @@ const i18n = {
     
 }
 i18n.prefixLangScript();
+
+//Code to reload the window. Placed on the HTML.
+// document.getElementById("#reloadThis").onclick(setTimeout(function(){
+//         window.location.reload();
+// }, 1000));
+
+

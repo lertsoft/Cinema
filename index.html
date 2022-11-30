@@ -56,6 +56,8 @@
     <title>Ronny's Cinematography</title>
   </head>
     <body class="cursor-default">
+      <div id="loader"></div>
+      <!-- <div id="content" style="display: none;"> -->
       <div class="space">
         <div class="stars"></div>
         <div class="spaceship">
@@ -85,15 +87,23 @@
                       <div class="Languages">
                         <h3 >Change Languages</h3>
                         <!-- <button > -->
-                          <a href="?lang" > En </a>
+                          <a id="reloadThis" href="?lang" > En </a>
                         <!-- </button> -->
                         <!-- <button > -->
-                          <a href="?lang=es" > 
+                          <a id="reloadThis" 
+                            onclick="setTimeout(function(){
+                            window.location.reload();
+                                }, 500);" 
+                            href="?lang=es" > 
                             Es
                           </a>
                         <!-- </button> -->
                         <!-- <button > -->
-                          <a href="?lang=fr" > 
+                          <a id="reloadThis"
+                             onclick="setTimeout(function(){
+                            window.location.reload();
+                             }, 500);"
+                           href="?lang=fr" > 
                             Fr
                           </a>
                         <!-- </button> -->
@@ -104,7 +114,7 @@
                   <div class="page-content" id="content app" js-slot="content" >
                     <article class="bio">
                       <p class="big-text">
-                       <span data-i18n="hey"> Hey!</span> <span data-i18n="im">I am </span><span class="bio__photo" tabindex="0" >Ronny Coste</span>, 
+                       <span data-i18n="hey">Hey!</span> <span data-i18n="im">I am </span><span class="bio__photo" tabindex="0" >Ronny Coste</span>, 
                        <span data-i18n="a"> a </span><button class="button-text js-channel-trigger" data-channel="8" data-i18n="dominican">Dominican</button> 
                        <span data-i18n="skills"> Filmmaker & Software engineer based in New York City. I dabble in photography, web engineering, cinematography, javascript frameworks, and design.</span>
                         <br/><br/>
@@ -174,7 +184,16 @@
       </div>
   
       <div class="js-remote"></div>
-    <!-- <div id="app"></div> -->
+      <!-- Jquery for i18n support -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <!-- i18n library -->
+      <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+
+    
+      <!-- Main.js -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
