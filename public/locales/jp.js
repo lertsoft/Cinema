@@ -1,6 +1,6 @@
 const i18nLangs = {
-    hey: 'ハイ',
-    im: '私の名前は',
+    hey: 'ハイ ',
+    im: '私の名前は ',
     a: 'un',
     dominican: 'dominicano',
     skills: 'Cinematografo & Ingeniero en software basado en la ciudad de Nueva York. Mis intereses son fotografia, engenieria web, cinematografia, frameworks de javascript, y diseño.',
