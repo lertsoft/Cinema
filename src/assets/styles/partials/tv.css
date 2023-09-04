@@ -21,7 +21,7 @@
   /* colors */
   .tv-effect.--static {
     background-size: cover;
-    opacity: 0.1;
+    opacity: -10;
     background-image: url(/assets/images/effect-static.gif);
   
     @nest body:matches([channel='0'], :not([channel])) & {
@@ -92,7 +92,7 @@
       height: 100%;
       background-image: repeating-linear-gradient(
         transparent,
-        transparent 6px,
+        transparent 1px,
         rgba(255, 255, 255, 0.03) 6px,
         rgba(255, 255, 255, 0.03) 12px
       );
